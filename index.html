@@ -83,6 +83,12 @@
     padding: 0 2px;
   }
 
+  .nb { white-space: nowrap; }
+
+  @media (max-width: 480px) {
+    .nb { white-space: normal; }
+  }
+
   /* --- Header / Nav --- */
   header {
     position: sticky;
@@ -142,8 +148,8 @@
 
   .hero-grid {
     display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
-    gap: 48px;
+    grid-template-columns: 1.02fr 0.98fr;
+    gap: 44px;
     align-items: center;
   }
 
@@ -184,18 +190,20 @@
   }
 
   .hero .role {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 1.5vw, 1.18rem);
     color: var(--text-muted);
     margin-bottom: 28px;
+    text-wrap: balance;
   }
 
   .hero .catch {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     max-width: 620px;
     margin-bottom: 40px;
     color: var(--text);
     border-left: 3px solid var(--accent-light);
     padding-left: 18px;
+    text-wrap: pretty;
   }
 
   .btn-group {
@@ -621,7 +629,7 @@
       <h1>西園 友加里</h1>
       <p class="role">AI活用エンジニア（アプリ・Web開発）／元保育士</p>
       <p class="catch">
-        保育の現場で10年働いたあと、<span class="marker">現場を変える側</span>に回りました。
+        保育の現場で10年。いまは<span class="marker">生成AI</span>を使って<span class="nb">アプリとWebをつくっています。</span>
       </p>
       <div class="btn-group">
         <a href="#projects" class="btn btn-primary">プロジェクトを見る</a>
