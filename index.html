@@ -138,40 +138,82 @@
 
   /* --- Hero --- */
   .hero {
-    min-height: 78vh;
+    min-height: 72vh;
     display: flex;
     align-items: center;
     background: var(--bg);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    overflow: hidden;
   }
 
   .hero-grid {
     display: grid;
-    grid-template-columns: 1.02fr 0.98fr;
-    gap: 44px;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 40px;
     align-items: center;
   }
 
-  .hero-shot img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  /* 右端まで裁ち落として、ページに据わらせる */
+  .hero-shot {
+    margin-right: calc(-50vw + 50% + 24px);
+  }
+
+  .browser {
+    border-radius: 12px 0 0 12px;
+    overflow: hidden;
+    background: #fff;
     border: 1px solid var(--border);
-    box-shadow: 0 12px 32px rgba(51, 41, 29, 0.12);
+    border-right: none;
+    box-shadow: 0 18px 44px rgba(51, 41, 29, 0.13);
+    display: block;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
   }
 
-  .hero-shot a:hover img {
+  .browser:hover {
     transform: translateY(-3px);
-    box-shadow: 0 18px 40px rgba(51, 41, 29, 0.16);
+    box-shadow: 0 24px 54px rgba(51, 41, 29, 0.17);
+  }
+
+  .browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    background: #f4f0e8;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .browser-bar i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d9d2c4;
+    flex: none;
+  }
+
+  .browser-bar span {
+    margin-left: 6px;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
+
+  .browser img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .hero-shot figcaption {
     margin-top: 12px;
     font-size: 0.82rem;
     color: var(--text-muted);
-    text-align: right;
+  }
+
+  @media (max-width: 900px) {
+    .hero-shot { margin-right: 0; }
+    .browser { border-radius: 12px; border-right: 1px solid var(--border); }
   }
 
   .hero-eyebrow {
@@ -637,12 +679,16 @@
       </div>
     </div>
     <figure class="hero-shot">
-      <a href="#projects">
+      <a class="browser" href="#projects">
+        <span class="browser-bar" aria-hidden="true">
+          <i></i><i></i><i></i>
+          <span>shift-manager — 勤務表作成</span>
+        </span>
         <img src="assets/shift-manager.png"
-             alt="shift-manager の勤務表作成画面。職員ごとの early/day/late シフトが色分けされた月間テーブル。"
-             width="3000" height="1900" loading="eager">
+             alt="shift-manager の勤務表作成画面。職員ごとに早番・日勤・遅番・休が色分けされた月間の勤務表。"
+             width="2370" height="1370" loading="eager">
       </a>
-      <figcaption>個人開発 shift-manager — 勤務表作成画面</figcaption>
+      <figcaption>個人開発 shift-manager の実画面</figcaption>
     </figure>
   </div>
 </section>
