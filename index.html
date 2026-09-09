@@ -6,16 +6,17 @@
 <title>西園友加里 | Portfolio</title>
 <style>
   :root {
-    --bg: #f7f5ef;
-    --bg-alt: #efe9dc;
+    --bg: #fffaf1;
+    --bg-alt: #fff1dc;
     --surface: #ffffff;
-    --text: #2f3830;
-    --text-muted: #6b7364;
-    --accent: #5b7a5b;
-    --accent-dark: #3f5c3f;
-    --accent-light: #a9c1a0;
-    --border: #e0dccb;
-    --shadow: 0 4px 20px rgba(47, 56, 48, 0.06);
+    --text: #33291d;
+    --text-muted: #8a7a63;
+    --accent: #ff8a3d;
+    --accent-dark: #e35d1f;
+    --accent-light: #ffd166;
+    --accent-blue: #2f80ed;
+    --border: #ffe2bd;
+    --shadow: 0 4px 20px rgba(227, 93, 31, 0.08);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -116,10 +117,7 @@
     min-height: 88vh;
     display: flex;
     align-items: center;
-    background:
-      radial-gradient(circle at 15% 20%, rgba(169, 193, 160, 0.35), transparent 45%),
-      radial-gradient(circle at 85% 80%, rgba(91, 122, 91, 0.15), transparent 50%),
-      var(--bg);
+    background: var(--bg);
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -568,11 +566,10 @@
 <!-- 1. Hero -->
 <section class="hero" id="hero">
   <div class="container">
-    <p class="hero-eyebrow">PORTFOLIO</p>
-    <h1>西園 友加里 / Nishizono Yukari</h1>
-    <p class="role">フルスタックエンジニア／元保育士</p>
+    <h1>西園 友加里</h1>
+    <p class="role">AI活用エンジニア（アプリ・Web開発）／元保育士</p>
     <p class="catch">
-      保育士としての10年の経験を、ユーザー視点のソフトウェア開発に活かす。
+      保育の現場で10年働いたあと、現場を変える側に回りました。
     </p>
     <div class="btn-group">
       <a href="#projects" class="btn btn-primary">プロジェクトを見る</a>
@@ -584,12 +581,11 @@
 <!-- 2. About -->
 <section id="about">
   <div class="container fade-in">
-    <span class="section-label">About</span>
     <h2>自己紹介</h2>
     <div class="about-grid">
       <div class="about-card">
         <h3>現職</h3>
-        <p>フルスタックエンジニア（約2年半、東京本社・霧島勤務のIT企業）</p>
+        <p>AI活用エンジニア（約2年半、東京本社・霧島勤務のIT企業）</p>
       </div>
       <div class="about-card">
         <h3>前職</h3>
@@ -601,15 +597,15 @@
       </div>
       <div class="about-card">
         <h3>今後の目標</h3>
-        <p>Groovenauts TECH PARKなど、自律性を重視した環境への転職を視野に、福岡への移住も検討しています。</p>
+        <p>保育士としての経験とIT知識を掛け合わせ、人が育つ仕組みや、現場の負担を減らす仕組みづくりに関わっていきたいと考えています。</p>
       </div>
     </div>
     <div class="about-card">
-      <h3>大事にしている価値観</h3>
+      <h3>仕事で大事にしていること</h3>
       <ul class="values-list">
-        <li>自律的な学習環境</li>
-        <li>ユーザー視点での設計・開発</li>
-        <li>他者を支える役割としての働き方</li>
+        <li>現場の困りごとから始めること。個人開発中の shift-manager は、自分が勤務表作成で苦労した経験がそのまま出発点になっています。</li>
+        <li>導入して終わりにしないこと。コドモン導入では、手書きだった帳面やお便りをデジタル化し、残業時間の削減まで持っていきました。</li>
+        <li>自分以外も使える状態にすること。登園管理のデジタル化では、担任だけでなく他の保育士や主任も園児の登園状況を把握できる体制まで整えました。</li>
       </ul>
     </div>
   </div>
@@ -618,28 +614,23 @@
 <!-- 3. Career Story -->
 <section id="story">
   <div class="container fade-in">
-    <span class="section-label">Career Story</span>
     <h2>保育士からエンジニアへ</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <p class="step">STEP 01</p>
         <h3>保育士としての10年間</h3>
-        <p>子ども一人ひとりへの観察力・個別対応力、保護者や同僚との調整を通じたチームワークを培いました。</p>
+        <p>0歳から6歳まで全クラスの担任を経験しました。子ども一人ひとりへの観察力・個別対応力と、保護者や同僚との調整を通じたチームワークを培いました。</p>
       </div>
       <div class="timeline-item">
-        <p class="step">STEP 02</p>
         <h3>きっかけ：コドモン導入</h3>
-        <p>現場に保育業務支援システム「コドモン」が導入されたことで、ITが現場の負担を減らし、より良いケアに時間を使えるようにする力を持つことを実感しました。</p>
+        <p>副主任として保育業務支援システム「コドモン」の導入を主導しました。手書きだった帳面やお便りがデジタルに置き換わり、残業が減っていく様子を目の当たりにしたことが、IT分野に関心を持つきっかけになりました。</p>
       </div>
       <div class="timeline-item">
-        <p class="step">STEP 03</p>
-        <h3>エンジニアへの転身・学習過程</h3>
-        <p>独学およびスクールでプログラミングを学び、フロントエンド・バックエンド・インフラまで一貫して開発できるスキルを習得しました。</p>
+        <h3>エンジニアへの転身</h3>
+        <p>公共職業訓練でプログラミングを学び、IT企業へ転職しました。システムテスト、企業ホームページの保守運用を経験したのち、開発職に就いています。</p>
       </div>
       <div class="timeline-item">
-        <p class="step">STEP 04</p>
-        <h3>現在の役割・今後の方向性</h3>
-        <p>東京本社・霧島勤務のIT企業でフルスタックエンジニアとして従事。今後はより自律性の高い環境でのキャリアを目指しています。</p>
+        <h3>現在の役割</h3>
+        <p>生成AI（Cursor、Claude Code）を活用したモバイルアプリ・ホームページ開発に、チーム開発を中心に携わっています。要件に応じてモック作成から実装まで対応しています。</p>
       </div>
     </div>
   </div>
@@ -648,7 +639,6 @@
 <!-- 4. Skills -->
 <section id="skills">
   <div class="container fade-in">
-    <span class="section-label">Skills</span>
     <h2>スキル・技術スタック</h2>
     <div class="skills-grid">
       <div class="skill-card">
@@ -684,23 +674,23 @@
 <!-- 5. Projects -->
 <section id="projects">
   <div class="container fade-in">
-    <span class="section-label">Projects</span>
     <h2>プロジェクト事例</h2>
 
     <div class="project-card">
       <div class="project-head">
         <h3>shift-manager（勤務表作成アプリ）</h3>
         <div class="project-links">
-          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/obarin-dev/shift-manager" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
       <p class="project-desc">
-        保育園で勤務表作成に苦労した自身の経験をもとに、この課題をAIの力で解決できないかと考えて個人開発中のアプリケーション。
+        保育園で勤務表作成に苦労した自身の経験をもとに開発している、保育園向けのシフト管理アプリケーション。保育時間・勤務区分・職員・クラスの登録から勤務表の作成までを扱えます。
       </p>
       <div class="project-meta">
-        <div><span class="label">使用技術</span><span class="value">TypeScript（96%）/ CSS（4%）</span></div>
-        <div><span class="label">役割</span><span class="value">個人開発（要件定義〜実装まで一人で担当）</span></div>
-        <div><span class="label">工夫した点</span><span class="value">実際に感じた困りごとをベースに要件定義から実装まで試行錯誤しながら開発。生成AI（Cursor、Claude Code）を活用しながら開発を継続中。</span></div>
+        <div><span class="label">使用技術</span><span class="value">Next.js（App Router）/ React / TypeScript / PostgreSQL + Prisma / JWT認証（jose・bcrypt）/ Google Gemini AI / Vitest / GitHub Actions</span></div>
+        <div><span class="label">役割</span><span class="value">個人開発（要件定義〜設計・実装・テスト・CI構築まで一人で担当）</span></div>
+        <div><span class="label">規模</span><span class="value">TypeScript 約190ファイル / テスト25ファイル / Prismaモデル13種 / 257コミット</span></div>
+        <div><span class="label">工夫した点</span><span class="value">AIによる勤務表生成は、APIキー未設定時にルールベース生成へフォールバックする設計にし、AIが使えない環境でも動作するようにしました。</span></div>
       </div>
     </div>
 
@@ -708,16 +698,16 @@
       <div class="project-head">
         <h3>ai-magic-kids</h3>
         <div class="project-links">
-          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/obarin-dev/ai-magic-kids" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
       <p class="project-desc">
-        子供が描いた絵をAIが認識し、座標を取得して動かす仕組みを開発中。完成には至っていないが、画像認識と座標検出のロジックを個人で試作。
+        娘が描いた絵をAIが読み取って骨格データを抽出し、それを子ども自身がブロック命令で動かす親子向けアプリ。「AIが勝手にアニメーションを作る」のではなく、「AIが抽出した座標をどう動かすか」を子どもが考える体験を大切にしています。試作段階のプロジェクトです。
       </p>
       <div class="project-meta">
-        <div><span class="label">使用技術</span><span class="value">TypeScript（83.6%）/ CSS（9%）/ Python（7.3%）/ JavaScript（0.1%）</span></div>
-        <div><span class="label">役割・目的</span><span class="value">個人開発（アイデアの試作）</span></div>
-        <div><span class="label">工夫した点</span><span class="value">複数言語（TypeScript／Python／JavaScript）を組み合わせた構成に挑戦。未完成ながらも実装力・継続力をアピール。</span></div>
+        <div><span class="label">使用技術</span><span class="value">Next.js / React / TypeScript / Python（線画抽出）/ Google Gemini 1.5 Flash（マルチモーダル）</span></div>
+        <div><span class="label">役割・目的</span><span class="value">個人開発（コンセプト設計〜試作）</span></div>
+        <div><span class="label">工夫した点</span><span class="value">低学年の子どもが直接AI APIを扱えない制約を踏まえ、「親がエンジンを設計し、子どもが操縦する」という役割分担で設計。座標という算数の概念を遊びながら学べる構成にしています。</span></div>
       </div>
     </div>
 
@@ -727,7 +717,6 @@
 <!-- 6. Work History -->
 <section id="career">
   <div class="container fade-in">
-    <span class="section-label">Career</span>
     <h2>職務経歴（簡易版）</h2>
 
     <div class="job-card">
@@ -753,15 +742,12 @@
         <li>登園管理のデジタル化により、園全体での安全管理体制を強化</li>
       </ul>
     </div>
-
-    <p class="note">※ 詳細な職務経歴書は別途PDFにてご用意しております。</p>
   </div>
 </section>
 
 <!-- 7. Contact -->
 <section id="contact" class="contact-section">
   <div class="container fade-in">
-    <span class="section-label">Contact</span>
     <h2>お問い合わせ</h2>
     <p>ご興味・ご質問等ございましたら、以下よりお気軽にご連絡ください。</p>
     <div class="contact-list">
