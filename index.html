@@ -427,6 +427,26 @@
     gap: 8px;
   }
 
+  .skill-card ul {
+    list-style: none;
+    display: grid;
+    gap: 7px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+  }
+
+  .skill-card ul li {
+    padding-left: 15px;
+    position: relative;
+  }
+
+  .skill-card ul li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
   .tag {
     background: var(--bg-alt);
     color: var(--text);
@@ -663,8 +683,8 @@
     <nav class="nav-links" id="navLinks">
       <a href="#about">自己紹介</a>
       <a href="#story">キャリアストーリー</a>
-      <a href="#skills">スキル</a>
-      <a href="#projects">プロジェクト</a>
+      <a href="#skills">スキル・資格</a>
+      <a href="#projects">取り組み</a>
       <a href="#career">職務経歴</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
@@ -676,12 +696,12 @@
   <div class="container hero-grid">
     <div>
       <h1>西園 友加里</h1>
-      <p class="role">AI活用エンジニア（アプリ・Web開発）／元保育士</p>
+      <p class="role">元保育士（副主任）／AI活用エンジニア</p>
       <p class="catch">
-        保育の現場で10年。いまは<span class="marker">生成AI</span>を使って<span class="nb">アプリとWebをつくっています。</span>
+        保育の現場でICTを導入した側にいて、いまはシステムをつくる側にいます。<span class="nb"><span class="marker">現場の不安も、仕組みも</span>どちらもわかります。</span>
       </p>
       <div class="btn-group">
-        <a href="#projects" class="btn btn-primary">プロジェクトを見る</a>
+        <a href="#projects" class="btn btn-primary">取り組みを見る</a>
         <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
       </div>
     </div>
@@ -714,19 +734,19 @@
       </div>
       <div class="about-card">
         <h3>キャリアチェンジのきっかけ</h3>
-        <p>コドモン導入をきっかけに、ITによる現場改善の可能性に興味を持ったことがエンジニアを志すきっかけとなりました。</p>
+        <p>副主任として保育ICTシステムの導入を主導し、ITが現場の負担を減らす様子を間近で見たことがきっかけです。</p>
       </div>
       <div class="about-card">
-        <h3>今後の目標</h3>
-        <p>保育士としての経験とIT知識を掛け合わせ、人が育つ仕組みや、現場の負担を減らす仕組みづくりに関わっていきたいと考えています。</p>
+        <h3>目指していること</h3>
+        <p>保育ICTのサポート・カスタマーサクセス職として、先生方が安心してサービスを使いこなせるよう支える仕事に携わりたいと考えています。</p>
       </div>
     </div>
     <div class="about-card">
-      <h3>仕事で大事にしていること</h3>
+      <h3>サポート職で活かせること</h3>
       <ul class="values-list">
-        <li>現場の困りごとから始めること。個人開発中の shift-manager は、自分が勤務表作成で苦労した経験がそのまま出発点になっています。</li>
-        <li>導入して終わりにしないこと。コドモン導入では、手書きだった帳面やお便りをデジタル化し、残業時間の削減まで持っていきました。</li>
-        <li>自分以外も使える状態にすること。登園管理のデジタル化では、担任だけでなく他の保育士や主任も園児の登園状況を把握できる体制まで整えました。</li>
+        <li><strong>導入される側の気持ちがわかること。</strong>自分自身が保育ICTシステムを現場に入れる立場でした。操作に不安を感じる職員一人ひとりに使い方を説明し、定着するまでフォローを重ねた経験があります。</li>
+        <li><strong>保育の業務を具体的に説明できること。</strong>0歳から6歳まで全クラスの担任を経験し、勤務表作成や登降園管理、保護者対応まで一通り担当しました。先生方の「困った」を、前提の説明なしに理解できます。</li>
+        <li><strong>開発チームに正確に伝えられること。</strong>現在はエンジニアとして開発に携わっており、要望を仕様や再現手順に落として伝えられます。問い合わせから見えた課題を、改善につなげる橋渡しができます。</li>
       </ul>
     </div>
   </div>
@@ -735,23 +755,23 @@
 <!-- 3. Career Story -->
 <section id="story">
   <div class="container fade-in">
-    <h2>保育士からエンジニアへ</h2>
+    <h2>現場から、つくる側へ</h2>
     <div class="timeline">
       <div class="timeline-item">
         <h3>保育士としての10年間</h3>
-        <p>0歳から6歳まで全クラスの担任を経験しました。子ども一人ひとりへの観察力・個別対応力と、保護者や同僚との調整を通じたチームワークを培いました。</p>
+        <p>0歳から6歳まで全クラスの担任を経験しました。保護者支援、クラスだより作成、連絡帳記入、行事の企画・運営まで担当し、子ども一人ひとりへの個別対応力と、同僚との調整力を培いました。</p>
       </div>
       <div class="timeline-item">
-        <h3>きっかけ：コドモン導入</h3>
-        <p>副主任として保育業務支援システム「コドモン」の導入を主導しました。手書きだった帳面やお便りがデジタルに置き換わり、残業が減っていく様子を目の当たりにしたことが、IT分野に関心を持つきっかけになりました。</p>
+        <h3>保育ICTシステムの導入を主導</h3>
+        <p>副主任として、登降園管理・保護者連絡・お便り配信を担う保育ICTシステムの導入を進めました。操作に不安を感じる職員には一人ずつ使い方を説明し、現場に定着するまでフォローを重ねました。手書きの帳面やお便りがデジタルに置き換わり、残業時間の削減につながりました。</p>
       </div>
       <div class="timeline-item">
-        <h3>エンジニアへの転身</h3>
+        <h3>仕組みを理解するためにエンジニアへ</h3>
         <p>公共職業訓練でプログラミングを学び、IT企業へ転職しました。システムテスト、企業ホームページの保守運用を経験したのち、開発職に就いています。</p>
       </div>
       <div class="timeline-item">
-        <h3>現在の役割</h3>
-        <p>生成AI（Cursor、Claude Code）を活用したモバイルアプリ・ホームページ開発に、チーム開発を中心に携わっています。要件に応じてモック作成から実装まで対応しています。</p>
+        <h3>現在、そしてこれから</h3>
+        <p>生成AI（Cursor、Claude Code）を活用したアプリ・Web開発にチームで携わっています。開発を経験する中で、システムをつくること以上に「使う方の困りごとを聞き、使いこなせるよう支えること」に自分の強みがあると感じ、保育ICTのサポート職を目指しています。</p>
       </div>
     </div>
   </div>
@@ -760,7 +780,7 @@
 <!-- 4. Skills -->
 <section id="skills">
   <div class="container fade-in">
-    <h2>スキル・技術スタック</h2>
+    <h2>スキル・資格</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <h3>言語</h3>
@@ -768,10 +788,17 @@
           <span class="tag">TypeScript</span>
           <span class="tag">JavaScript</span>
           <span class="tag">Python</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
           <span class="tag">Ruby</span>
           <span class="tag">PHP</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>フレームワーク・DB</h3>
+        <div class="tag-list">
+          <span class="tag">Next.js</span>
+          <span class="tag">PostgreSQL</span>
         </div>
       </div>
       <div class="skill-card">
@@ -779,6 +806,8 @@
         <div class="tag-list">
           <span class="tag">AWS</span>
           <span class="tag">GCP</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GitHub Actions</span>
         </div>
       </div>
       <div class="skill-card">
@@ -788,6 +817,23 @@
           <span class="tag">Claude Code</span>
         </div>
       </div>
+      <div class="skill-card qualifications">
+        <h3>資格</h3>
+        <ul>
+          <li>保育士資格（平成24年3月）</li>
+          <li>幼稚園教諭第二種免許状（平成24年3月）</li>
+          <li>Webクリエイター能力認定試験エキスパート（令和4年8月）</li>
+          <li>PHP7技術者認定初級試験（令和5年7月）</li>
+          <li>普通自動車第一種運転免許（平成22年3月）</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>継続して学んでいること</h3>
+        <ul>
+          <li>Jenkins を用いた CI/CD（AIによるコードレビューの自動化に取り組み中）</li>
+          <li>Claude Code のカスタムコマンドを作成し、コードレビューの自動化を運用</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -795,7 +841,7 @@
 <!-- 5. Projects -->
 <section id="projects">
   <div class="container fade-in">
-    <h2>プロジェクト事例</h2>
+    <h2>これまでの取り組み</h2>
 
     <div class="project-card">
       <div class="project-head">
@@ -805,30 +851,28 @@
         </div>
       </div>
       <p class="project-desc">
-        保育園で勤務表作成に苦労した自身の経験をもとに開発している、保育園向けのシフト管理アプリケーション。保育時間・勤務区分・職員・クラスの登録から勤務表の作成までを扱えます。
+        保育園の勤務表作成に毎月苦労した自身の経験をもとに開発している、保育園向けのシフト管理アプリケーションです。保育時間・勤務区分・職員・クラスの登録から勤務表の作成・公開までを扱えます。保育現場の業務フローを、そのまま要件に落とし込んでいます。
       </p>
       <div class="project-meta">
-        <div><span class="label">使用技術</span><span class="value">Next.js（App Router）/ React / TypeScript / PostgreSQL + Prisma / JWT認証（jose・bcrypt）/ Google Gemini AI / Vitest / GitHub Actions</span></div>
-        <div><span class="label">役割</span><span class="value">個人開発（要件定義〜設計・実装・テスト・CI構築まで一人で担当）</span></div>
-        <div><span class="label">規模</span><span class="value">TypeScript 約190ファイル / テスト25ファイル / Prismaモデル13種 / 257コミット</span></div>
-        <div><span class="label">工夫した点</span><span class="value">AIによる勤務表生成は、APIキー未設定時にルールベース生成へフォールバックする設計にし、AIが使えない環境でも動作するようにしました。</span></div>
+        <div><span class="label">現場との接点</span><span class="value">休園日は自動で「休」になる、担任以外も勤務状況を把握できる、印刷して掲示できる——実際の運用で必要になる挙動を優先して実装しています。</span></div>
+        <div><span class="label">使用技術</span><span class="value">Next.js（App Router）/ TypeScript / PostgreSQL + Prisma / AWS（EC2）+ Docker Compose / GitHub Actions（CI/CD）/ Google Gemini AI</span></div>
+        <div><span class="label">役割</span><span class="value">個人開発（要件定義〜設計・実装・テスト・本番環境構築まで一人で担当）</span></div>
+        <div><span class="label">運用</span><span class="value">GitHub の Issue・Pull Request でタスクを管理し、継続的に機能追加・改善（PR約90件）。本番環境ではバックアップとコストアラートも設定しています。</span></div>
+        <div><span class="label">工夫した点</span><span class="value">AIによる勤務表生成は、APIキー未設定時にルールベース生成へ切り替わる設計にし、AIが使えない環境でも動作するようにしました。</span></div>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-head">
-        <h3>ai-magic-kids</h3>
-        <div class="project-links">
-          <a href="https://github.com/obarin-dev/ai-magic-kids" target="_blank" rel="noopener">GitHub</a>
-        </div>
+        <h3>子ども向けプログラミング授業の企画・教材制作</h3>
       </div>
       <p class="project-desc">
-        娘が描いた絵をAIが読み取って骨格データを抽出し、それを子ども自身がブロック命令で動かす親子向けアプリ。「AIが勝手にアニメーションを作る」のではなく、「AIが抽出した座標をどう動かすか」を子どもが考える体験を大切にしています。試作段階のプロジェクトです。
+        未就学児〜小学生向けに、90分のプログラミング授業を企画しました。「順序」「繰り返し」など伝える内容をあえて絞り、ひらがな中心のスライドと、体を動かして学ぶ活動の進行台本を作成しています。
       </p>
       <div class="project-meta">
-        <div><span class="label">使用技術</span><span class="value">Next.js / React / TypeScript / Python（線画抽出）/ Google Gemini 1.5 Flash（マルチモーダル）</span></div>
-        <div><span class="label">役割・目的</span><span class="value">個人開発（コンセプト設計〜試作）</span></div>
-        <div><span class="label">工夫した点</span><span class="value">低学年の子どもが直接AI APIを扱えない制約を踏まえ、「親がエンジンを設計し、子どもが操縦する」という役割分担で設計。座標という算数の概念を遊びながら学べる構成にしています。</span></div>
+        <div><span class="label">意識したこと</span><span class="value">相手の前提知識に合わせて、何を伝えないかを決めること。説明する相手が変われば、伝え方も変える必要があると考えています。</span></div>
+        <div><span class="label">制作物</span><span class="value">授業で使うため、命令を組み合わせて遊びながらプログラミングの考え方を学べるパズルアプリ（meirei-puzzle）も個人開発しました。</span></div>
+        <div><span class="label">サポート職との関わり</span><span class="value">操作に不慣れな方への説明資料づくりや、導入研修の設計に直接活かせる経験だと考えています。</span></div>
       </div>
     </div>
 
@@ -859,7 +903,7 @@
       </div>
       <ul>
         <li>0歳〜6歳、全クラスの担任を経験。年齢の発達に合わせた保育を実施</li>
-        <li>副主任としてコドモンアプリ（登降園管理・保護者連絡）の導入を主導し、業務をデジタル化</li>
+        <li>副主任として保育ICTシステム（登降園管理・保護者連絡・お便り配信）の導入を主導し、業務をデジタル化。操作に不安のある職員へのフォローも担当</li>
         <li>登園管理のデジタル化により、園全体での安全管理体制を強化</li>
       </ul>
     </div>
